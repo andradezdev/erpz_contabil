@@ -1,0 +1,16 @@
+{
+    "app": "erpz_contabil",
+    "doctype": "Desktop Icon",
+    "hidden": 0,
+    "icon": "calculator",
+    "icon_type": "Link",
+    "idx": 9,
+    "label": "ERPZ Contábil",
+    "link_to": "ERPZ Contábil",
+    "link_type": "Workspace Sidebar",
+    "name": "ERPZ Contábil",
+    "parent_icon": "Accounting",
+    "restrict_removal": 0,
+    "roles": [],
+    "standard": 1
+}

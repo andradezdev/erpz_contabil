@@ -1,0 +1,98 @@
+{
+ "app": "erpz_contabil",
+ "creation": "2026-09-16 17:38:32.502926",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "calculator",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "home",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Home",
+   "link_to": "ERPZ Cont\u00e1bil",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "chart",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Demonstra\u00e7\u00f5es Cont\u00e1beis",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Section Break"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "file-text",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Demonstra\u00e7\u00e3o do Resultado (DRE)",
+   "link_to": "Demonstra\u00e7\u00e3o do Resultado do Exerc\u00edcio (DRE)",
+   "link_type": "Report",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "database",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Conformidade e RFB",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Section Break"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "list",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Plano de Contas Referencial RFB",
+   "link_to": "Plano de Contas Referencial RFB",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "git-branch",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Mapeamento Cont\u00e1bil RFB",
+   "link_to": "Mapeamento Contabil RFB",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "file",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Gerador SPED Cont\u00e1bil ECD",
+   "link_to": "Gerador SPED Contabil ECD",
+   "link_type": "Report",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-09-16 17:38:32.502926",
+ "modified_by": "Administrator",
+ "name": "ERPZ Contabil",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "ERPZ Contabil"
+}

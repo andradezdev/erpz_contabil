@@ -1,0 +1,114 @@
+{
+ "app": "erpz_contabil",
+ "charts": [],
+ "content": "[{\"id\": \"h_sc\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Atalhos R\\u00e1pidos</b></span>\", \"col\": 12}}, {\"id\": \"sc_dre\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"DRE (Lei 6.404/76)\", \"col\": 4}}, {\"id\": \"sc_ecd\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"SPED Cont\\u00e1bil ECD\", \"col\": 4}}, {\"id\": \"sc_plano\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Plano Referencial RFB\", \"col\": 4}}, {\"id\": \"sp_1\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"h_cards\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Demonstra\\u00e7\\u00f5es e Obriga\\u00e7\\u00f5es</b></span>\", \"col\": 12}}, {\"id\": \"card_dem\", \"type\": \"card\", \"data\": {\"card_name\": \"Demonstra\\u00e7\\u00f5es Oficiais\", \"col\": 6}}, {\"id\": \"card_rfb\", \"type\": \"card\", \"data\": {\"card_name\": \"Conformidade Receita Federal\", \"col\": 6}}]",
+ "creation": "2026-09-16 17:38:31.958329",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "calculator",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "ERPZ Cont\u00e1bil",
+ "link_type": "DocType",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Demonstra\u00e7\u00f5es Oficiais",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "DRE Estruturada (Lei 6.404/76 e ITG 1000)",
+   "link_count": 0,
+   "link_to": "Demonstra\u00e7\u00e3o do Resultado do Exerc\u00edcio (DRE)",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Conformidade Receita Federal",
+   "link_count": 0,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Plano de Contas Referencial RFB",
+   "link_count": 0,
+   "link_to": "Plano de Contas Referencial RFB",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mapeamento de Contas (De-Para RFB)",
+   "link_count": 0,
+   "link_to": "Mapeamento Contabil RFB",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Gerador SPED Cont\u00e1bil (ECD)",
+   "link_count": 0,
+   "link_to": "Gerador SPED Contabil ECD",
+   "link_type": "Report",
+   "onboard": 1,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-09-16 17:49:55.364093",
+ "modified_by": "Administrator",
+ "module": "ERPZ Contabil",
+ "name": "ERPZ Cont\u00e1bil",
+ "number_cards": [],
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 0.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "",
+   "label": "DRE (Lei 6.404/76)",
+   "link_to": "Demonstra\u00e7\u00e3o do Resultado do Exerc\u00edcio (DRE)",
+   "report_ref_doctype": "GL Entry",
+   "type": "Report"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "",
+   "label": "SPED Cont\u00e1bil ECD",
+   "link_to": "Gerador SPED Contabil ECD",
+   "report_ref_doctype": "GL Entry",
+   "type": "Report"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Plano Referencial RFB",
+   "link_to": "Plano de Contas Referencial RFB",
+   "type": "DocType"
+  }
+ ],
+ "title": "ERPZ Cont\u00e1bil",
+ "type": "Workspace"
+}
