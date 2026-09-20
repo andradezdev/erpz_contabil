@@ -2,13 +2,13 @@ import frappe
 import json, os
 
 def setup_contabil_desktop_icon():
-    icon_name = "ERPZ Contábil"
+    icon_name = "ERPZ Contabil"
     acc_data = {
-        "label": "ERPZ Contábil",
+        "label": "ERPZ Contabil",
         "icon": "calculator",
         "icon_type": "Link",
         "link_type": "Workspace Sidebar",
-        "link_to": "ERPZ Contábil",
+        "link_to": "ERPZ Contabil",
         "parent_icon": "",
         "hidden": 0,
         "standard": 1,
@@ -20,6 +20,7 @@ def setup_contabil_desktop_icon():
         frappe.db.set_value("Desktop Icon", icon_name, acc_data)
     else:
         doc = frappe.new_doc("Desktop Icon")
+        doc.name = icon_name
         doc.update(acc_data)
         doc.insert(ignore_permissions=True)
 
@@ -29,8 +30,8 @@ def setup_contabil_desktop_icon():
         with open(sb_file, "r", encoding="utf-8") as fp:
             sb_data = json.load(fp)
 
-        if frappe.db.exists("Workspace Sidebar", "ERPZ Contábil"):
-            sb = frappe.get_doc("Workspace Sidebar", "ERPZ Contábil")
+        if frappe.db.exists("Workspace Sidebar", "ERPZ Contabil"):
+            sb = frappe.get_doc("Workspace Sidebar", "ERPZ Contabil")
             sb.items = []
             for it in sb_data.get("items", []):
                 sb.append("items", it)
