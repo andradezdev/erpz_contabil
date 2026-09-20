@@ -41,6 +41,41 @@ def setup_contabil_desktop_icon():
             sb.update(sb_data)
             sb.insert(ignore_permissions=True)
 
+    # Atualiza Desktop Layout se o usuario ja possuir layout salvo
+    if frappe.db.table_exists("Desktop Layout"):
+        layouts = frappe.get_all("Desktop Layout", fields=["name", "layout"])
+        for l in layouts:
+            if not l.layout:
+                continue
+            try:
+                items = json.loads(l.layout)
+                has_it = any(x.get("name") == icon_name or x.get("label") == icon_name for x in items)
+                if not has_it:
+                    c_item = {
+                        "label": "ERPZ Contabil",
+                        "bg_color": "gray",
+                        "link": None,
+                        "link_type": "Workspace Sidebar",
+                        "app": "erpz_contabil",
+                        "icon_type": "Link",
+                        "parent_icon": "",
+                        "icon": "calculator",
+                        "link_to": "ERPZ Contabil",
+                        "idx": 10,
+                        "standard": 1,
+                        "logo_url": None,
+                        "hidden": 0,
+                        "name": "ERPZ Contabil",
+                        "restrict_removal": 0,
+                        "icon_image": None
+                    }
+                    items.append(c_item)
+                    doc_l = frappe.get_doc("Desktop Layout", l.name)
+                    doc_l.layout = json.dumps(items)
+                    doc_l.save(ignore_permissions=True)
+            except Exception:
+                pass
+
 def after_install():
     setup_contabil_desktop_icon()
     frappe.db.commit()
