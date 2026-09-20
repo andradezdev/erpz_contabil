@@ -9,11 +9,11 @@ def setup_contabil_desktop_icon():
         "icon_type": "Link",
         "link_type": "Workspace Sidebar",
         "link_to": "ERPZ Contábil",
-        "parent_icon": "Accounting",
+        "parent_icon": "",
         "hidden": 0,
         "standard": 1,
         "app": "erpz_contabil",
-        "idx": 1
+        "idx": 10
     }
 
     if frappe.db.exists("Desktop Icon", icon_name):
