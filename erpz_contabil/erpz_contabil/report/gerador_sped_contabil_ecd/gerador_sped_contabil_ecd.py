@@ -96,3 +96,21 @@ def execute(filters=None):
     linhas.append(f"|9999|{len(linhas) + 2}|")
 
     return columns, [{"linha_sped": l} for l in linhas]
+
+
+@frappe.whitelist()
+def baixar_arquivo_sped_ecd_txt(empresa=None, from_date=None, to_date=None):
+    """Gera e retorna o conteúdo do arquivo TXT do SPED Contábil ECD"""
+    cols, data = execute({
+        "empresa": empresa,
+        "from_date": from_date,
+        "to_date": to_date
+    })
+    txt_content = "\r\n".join([d["linha_sped"] for d in data]) + "\r\n"
+    dt_ref = str(to_date or "20261231").replace("-", "")
+    nome_arquivo = f"SPED_ECD_{empresa or 'EMPRESA'}_{dt_ref}.txt"
+    return {
+        "success": True,
+        "conteudo_txt": txt_content,
+        "nome_arquivo": nome_arquivo
+    }
